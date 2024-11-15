@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-    min-height: 100vh;
+min-height: 100%;
 }
 .logo{
 max-width: 150px;
@@ -277,8 +277,10 @@ footer {
     padding: 10px;
     text-align: center;
     margin-top: auto;
-    position:absolute;
-    bottom:0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:100%;
   }
 /* Pagina de pago */
 h1 {
@@ -288,6 +290,7 @@ h1 {
   text-align: center;
     font-size:medium;
     font-weight: light;
+    min-height: 100%;
 }
 #totalCompra {
   display: flex;
