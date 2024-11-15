@@ -277,6 +277,8 @@ footer {
     padding: 10px;
     text-align: center;
     margin-top: auto;
+    position:absolute;
+    bottom:0px;
   }
 /* Pagina de pago */
 h1 {
