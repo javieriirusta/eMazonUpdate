@@ -88,10 +88,7 @@ div.contenedor-formulario {
     padding: 20px;
     width: 500px;
     position: relative;
-    left:30%;
-  text-align:center;
-  justify-content:center;
-  align-items:center;
+  
 }
 .logoRMA {
     position: relative;
