@@ -269,13 +269,11 @@ header {
   }
   
 footer {
-    position:flex;
+    position:absolute;
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
-    bottom:0px;
-    width:100%;
   }
 /* Pagina de pago */
 h1 {
