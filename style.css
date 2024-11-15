@@ -326,14 +326,19 @@ h1 {
   font-weight: bold;
   font-size:x-large;
 }
-#volverInicio {
+#volverInicio, #volverInicio2 {
   font-size: medium;
-  color:white;
   text-decoration: none;
   opacity: 0.5;
   transition: all 0.2s;
 }
-#volverInicio:hover {
+#volverInicio {
+  color:white;
+}
+#volverInicio2{
+  color: black;
+}
+#volverInicio:hover, #volverInicio2:hover {
   opacity: 1;
 }
 #confirmarComprarProducto {
