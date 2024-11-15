@@ -284,7 +284,6 @@ h1 {
   text-align: center;
     font-size:medium;
     font-weight: light;
-    min-height: 100%;
 }
 #totalCompra {
   display: flex;
@@ -318,7 +317,6 @@ h1 {
   color: white;
   font-weight: bold;
   font-size:x-large;
-    transition:all 0.5s;
 }
 #volverInicio {
   font-size: medium;
