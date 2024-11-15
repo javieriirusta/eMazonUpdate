@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eMazon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="img/favicondark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con barra de navegación y carrito -->
+
+    <header id="header">
+        <nav class="nav-container">
+          <img id="menuhamburger" src="img/menuhamburger2.png"/>
+        </nav>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo" src="./img/eMazon2.png"/></a>
+        </div>
+        <div id="carritoIcono" class="carrito">
+                <span id="icono-carrito" class="icono-carrito">🛒</span>
+                <span class="cantidadCarrito" id="cantidadCarrito">0</span>
+            
+        </div>               
+    </header>
+    <div id="listaMenu">
+    <ul>
+        <li><a href="./quienesSomos.html">Quiénes somos</a></li>
+        <li><a href="./RMA.html">RMA</a></li>
+  </ul>
+    </div>
+    
+    <div id="carritoLateral" style="opacity:0;">
+    <div id="carritoOculto">
+    <p id="mensajeDefault">No hay elementos en el carrito</p>
+    </div>
+    <div id="botonVaciar"></div>
+    <div id="botonComprar"></div><br><br><br>
+    <br><br><br>
+    <br><br><br>
+    </div>
+    <!-- Grilla de productos -->
+    <section class="product-grid">
+        <div class="product-item">
+            <img src="img/1.jpg" alt="Smart Tv 43 Pulgadas Full Hd L43s5400 TCL">
+            <h3>TCL Smart Tv 43"</h3>
+            <p>Smart Tv 43 Pulgadas Full Hd L43s5400 TCL</p>
+            <span class="precio">$429999</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto1))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/2.jpg" alt="Smart Tv 55 Pulgadas Oled 4K Ultra Hd Oled55c3psa LG">
+            <h3>LG 55" OLED 4K</h3>
+            <p>Smart Tv 55 Pulgadas Oled 4K Ultra Hd Oled55c3psa LG</p>
+            <span class="precio">$2899999</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto2))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/3.jpg" alt="Aire Acondicionado Split Frío Calor 5500 Fg Frigorías TCL">
+            <h3>Aire Acondicionado Split Frío Calor 5500 Fg</h3>
+            <p>Aire Acondicionado Split Frío Calor 5500 Fg Frigorías TCL</p>
+            <span class="precio">$1249999</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto3))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/4.jpg" alt="Lavarropas Automatico Concept 6.5K 800Rpm Cs Ix - DREAN">
+            <h3>Lavarropas Automatico Concept DREAN</h3>
+            <p>Lavarropas Automatico Concept 6.5K 800Rpm Cs Ix - DREAN</p>
+            <span class="precio">$638999</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto4))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/5.jpg" alt="Motorola E14 Verde 64 Gb">
+            <h3>Motorola E14 64GB</h3>
+            <p>Celular Liberado E14 Verde 64 Gb - MOTOROLA</p>
+            <span class="precio">$199999</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto5))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/6.jpg" alt="Freidora De Aire Easyfryer-9000 9L - TELEFUNKEN">
+            <h3>Easyfryer-9000 - TELEFUNKEN</h3>
+            <p>Freidora De Aire Easyfryer-9000 9L - TELEFUNKEN</p>
+            <span class="precio">$209999</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto6))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/7.jpg" alt="Notebook Asus TUF">
+            <h3>Notebook Asus TUF</h3>
+            <p>Notebook Asus TUF</p>
+            <span class="precio">$2000000</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto7))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/8.jpg" alt="Notebook HP Victus">
+            <h3>Notebook HP Victus</h3>
+            <p>Notebook HP Victus</p>
+            <span class="precio">$2100000</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto8))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/9.jpg" alt="MSI Crosshair">
+            <h3>MSI Crosshair</h3>
+            <p>MSI Crosshair</p>
+            <span class="precio">$2009999</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto9))">Añadir al carrito</button>
+        </div>
+        <div class="product-item">
+            <img src="img/10.jpg" alt="Colchón Taurus">
+            <h3>Colchón Taurus</h3>
+            <p>Colchón Taurus</p>
+            <span class="precio">$799000</span>
+            <br>
+            <br>
+            <button onclick="(Carrito1.agregarProducto(producto10))">Añadir al carrito</button>
+        </div>
+        <!-- Agregar más productos según sea necesario -->
+    </section>
+    <footer>
+        <div class="footer">
+             <img src="img/eMazon2.png"/>   
+        </div>
+        <p>Todos los derechos reservados © 2024</p>
+    </footer>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

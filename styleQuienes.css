@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+.main-content {
+    margin: 10px 0;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para el título (h3) y párrafo (p) dentro de los productos */
+.main-content h3, p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Títulos (h3) */
+.main-content h3 {
+    font-size: 1.5em; /* Aumenta el tamaño del título */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Descripción (p) */
+.main-content p {
+    font-size: 1em;
+    color: #777;
+    line-height: 1.6; /* Mejora la legibilidad */
+    max-width: 90%; /* Limita el ancho del texto */
+    margin-left: auto;
+    margin-right: auto; /* Centra el párrafo */
+}
+
+.galeria {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cinco columnas en pantallas grandes */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centra las imágenes dentro de las celdas */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    max-width: 1200px; /* Un ancho máximo para que no se estire demasiado */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-galeria {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-galeria {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+}
+
+/* Estilo para los productos (imágenes) */
+.producto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Asegura que el texto esté centrado verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+}
+
+/* Estilo para las imágenes */
+.producto img {
+    width: 100%;
+    height: auto;
+    display: block; /* Elimina espacio debajo de las imágenes */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transición para el zoom y desvanecimiento */
+}
+
+/* Efecto de zoom al pasar el mouse sobre la imagen */
+.producto:hover img {
+    transform: scale(1.1); /* Hace que la imagen se agrande ligeramente */
+    opacity: 0.8; /* Da un efecto de opacidad */
+}
+
+/* Animación para mostrar/ocultar las imágenes (galería de productos) */
+@keyframes cicloGaleria {
+    0% { opacity: 1; }
+    33% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animación para los productos con distintos tiempos de retraso */
+.producto:nth-child(1) {
+    animation: cicloGaleria 15s infinite; /* Primera imagen */
+}
+
+.producto:nth-child(2) {
+    animation: cicloGaleria 15s 3s infinite; /* Segunda imagen aparece después de 3s */
+}
+
+.producto:nth-child(3) {
+    animation: cicloGaleria 15s 6s infinite; /* Tercera imagen aparece después de 6s */
+}
+
+.producto:nth-child(4) {
+    animation: cicloGaleria 15s 9s infinite; /* Cuarta imagen aparece después de 9s */
+}
+
+.producto:nth-child(5) {
+    animation: cicloGaleria 15s 12s infinite; /* Quinta imagen aparece después de 12s */
+}
+
+/* Responsividad: Ajuste de tamaños de fuente */
+@media (min-width: 1024px) {
+    .producto h3 {
+        font-size: 1.8em; /* Ajuste en pantallas grandes */
+    }
+    .producto p {
+        font-size: 1.2em; /* Ajuste en pantallas grandes */
+    }
+}
+
+@media (max-width: 768px) {
+    .producto h3 {
+        font-size: 1.4em; /* Ajuste en pantallas medianas */
+    }
+    .producto p {
+        font-size: 1em; /* Ajuste en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto h3 {
+        font-size: 1.2em; /* Ajuste en pantallas pequeñas */
+    }
+    .producto p {
+        font-size: 0.9em; /* Ajuste en pantallas pequeñas */
+    }
+}
