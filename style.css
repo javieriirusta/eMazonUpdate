@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    min-height: 100vh;
 }
 .logo{
 max-width: 150px;
@@ -274,6 +275,7 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+    margin-top: auto;
   }
 /* Pagina de pago */
 h1 {
