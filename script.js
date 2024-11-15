@@ -208,6 +208,7 @@ class carrito {
         const resumenCompra = document.getElementById("resumenCompra");
         if (resumenCompra){
         let total = 0;
+        if (this.cantidad > 0){
         for (let producto of this.carrito) {
             let subtotal = producto.cantidad*producto.precio;
             total = total + subtotal;
@@ -247,7 +248,11 @@ class carrito {
         }
         totalCompra.appendChild(totalCompratext);
         totalCompra.appendChild(comprarBoton);
+          }
+            else {
+                resumenCompra.innerHTML="<h3>No hay elementos en el carrito</h3><br><a id='volverInicio2' href='index.html'>Volver a inicio</a>";
             }
+        }
         }
     actualizarCantidadCarrito() {
         const cantidadElement = document.getElementById('cantidadCarrito');
