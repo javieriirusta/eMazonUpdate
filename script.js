@@ -159,12 +159,12 @@ class carrito {
             elementNombre.textContent = producto.nombre;
             elementCantidad.textContent = producto.cantidad;
             elementBotonmenos.textContent = "-";
-            elementBotonmenos.id = "botonmenos";
+            elementBotonmenos.id = "botonmasmenos";
             elementBotonmenos.addEventListener('click', () => {
                 this.eliminarProducto(producto);
             });
             elementBotonmas.textContent = "+";
-            elementBotonmas.id = "botonmas";
+            elementBotonmas.id = "botonmasmenos";
             elementBotonmas.addEventListener('click', () => {
                 this.agregarProducto(producto);
             });
