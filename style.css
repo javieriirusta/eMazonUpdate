@@ -1,6 +1,5 @@
 html {
   min-height: 100%;
-  position: relative;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -279,7 +278,6 @@ footer {
     padding: 10px;
     text-align: center;
   bottom: 0;
-  width: 100%;
   }
 /* Pagina de pago */
 h1 {
