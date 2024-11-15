@@ -110,7 +110,6 @@ header {
     justify-content: center;
 }
 #botonmasmenos {
-  border-radius: 50%;
   cursor: pointer;
     background-color:#0156cb;
     color:white;
