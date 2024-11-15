@@ -347,7 +347,7 @@ h1 {
 }
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
   line-height: 20px;
   gap: 20px;
   justify-items: center; /* Asegura que cada producto esté centrado */
