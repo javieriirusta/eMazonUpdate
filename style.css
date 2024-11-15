@@ -118,6 +118,7 @@ header {
     font-weight:bold;
     padding:5px;
     margin: 5px;
+    border-style:none;
 }
 .carrito a {
     color: white;
