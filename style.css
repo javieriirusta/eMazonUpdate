@@ -109,7 +109,7 @@ header {
     align-items: center; /* Centrar el texto verticalmente */
     justify-content: center;
 }
-#botonesmasmenos {
+.botonmasmenos {
   border-radius: 50%;
   cursor: pointer;
     background-color:#0156cb;
